@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-export default class Kir extends Component {
+export default class Cb extends Component {
   render() {
     return (
       <>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Kir from "./Kir";
+import Cb from "./Cb";
 
-export default class Coni extends Component {
+export default class Clb extends Component {
   state = {
     cart: [
       {
@@ -502,7 +502,7 @@ export default class Coni extends Component {
       <>
         <div className="flex flex-col lg:grid gap-10 lg:gap-x-32  lg:grid-cols-2  lg:w-[660px] lg:justify-start">
           {this.state.cart.map((item) => {
-            return <Kir svg={item.svg} top={item.top} but={item.but} />;
+            return <Cb svg={item.svg} top={item.top} but={item.but} />;
           })}
         </div>
       </>
