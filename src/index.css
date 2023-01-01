@@ -11,4 +11,7 @@
 
 
     }
+    .rent-btn {
+        @apply flex flex-row justify-center items-center text-center gap-2 w-24 h-12 lg:h-14 bg-PaleGray   hover:bg-white text-PaleDork font-normal text-lg hover:font-medium   hover:text-PaleBlue   hover:rounded-lg border-2  hover:border-2  border-PaleGray hover:border-Gray rounded-tl-lg duration-500;
+    }
     

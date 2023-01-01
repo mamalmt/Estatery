@@ -7,7 +7,7 @@ export default class Cb extends Component {
           <div className="">{this.props.svg}</div>
           <div className="flex flex-col gap-6">
             <h1 className="text-Dork text-2xl  font-bold">{this.props.top}</h1>
-            <p className="text-PaleDork opacity-50 text-base font-normal">
+            <p className="text-Dork opacity-90 text-base font-normal">
               {this.props.but}
             </p>
           </div>
