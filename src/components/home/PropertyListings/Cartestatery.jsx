@@ -3,11 +3,16 @@ import React, { Component } from "react";
 export default class Cartestatery extends Component {
   render() {
     return (
-      <>
-        <div className=" flex flex-col  text-center gap-3 w-[300px] h-[424px]   border border-Sea  border-opacity-20   rounded-xl">
-          <div className="w-[300px] h-[210px]">
+      <div className="flex-shrink-0  snap-center">
+        <div className="snap-center flex flex-col  text-center gap-3 lg:gap-2 w-[300px]  lg:w-[352px]  h-[430px] lg:h-[  424px]  border border-Sea  border-opacity-20   rounded-xl">
+          <div className="w-[300px]  lg:w-[352px] h-[210px]">
+            <img
+              className=" rounded-t-xl cursor-not-allowed"
+              src={require("../../../assets/img/home-page/imgestatery1.png")}
+              alt=""
+            />
             <button
-              className=" flex justify-center text-center    w-[113px]  h-8 text-white bg-PaleBlue rounded-lg  rounded-bl-none  absolute mt-40    "
+              className=" flex justify-center text-center    w-[113px]  h-8 text-white bg-PaleBlue rounded-lg  rounded-bl-none     "
               type="button "
             >
               <svg
@@ -27,14 +32,10 @@ export default class Cartestatery extends Component {
               </svg>
               POPULAR
             </button>
-            <img
-              className=" rounded-t-xl"
-              src={require("../../../assets/img/home-page/imgestatery1.png")}
-              alt=""
-            />
           </div>
+          <br />
           <div className="flex justify-around ">
-            <div className="flex flex-col gap-4 text-left">
+            <div className="flex flex-col gap-4 lg:gap-2 text-left">
               <h1 className="text-PaleBlue text-2xl font-bold">
                 {this.props.price}
                 <span className="text-PaleDork opacity-90 text-lg font-normal">
@@ -44,11 +45,14 @@ export default class Cartestatery extends Component {
               <h1 className="text-Dork text-2xl font-bold">
                 {this.props.title}
               </h1>
-              <h3 className="text-PaleDork opacity-80 text-lg font-normal">
+              <h3 className="text-PaleDork opacity-80 text-lg font-normal lg:hidden">
                 {this.props.location}
               </h3>
+              <span className="hiddenDiv lg:flex lg:text-PaleDork lg:opacity-80 lg:text-lg lg:font-norma">
+                {this.props.lglocation}
+              </span>
             </div>
-            <div className="">
+            <div className="cursor-pointer">
               <button
                 className="flex justify-center items-center w-12 h-12 rounded-full border border-Sea  border-opacity-20 "
                 type="button"
@@ -102,7 +106,8 @@ export default class Cartestatery extends Component {
                   fill="#7065F0"
                 />
               </svg>
-              <h1>{this.props.room} </h1>
+              <h1 className="lg:hidden">{this.props.room} </h1>
+              <h1 className="hiddenDiv lg:flex">{this.props.lgroom}</h1>
             </div>
             <div className="flex gap-2">
               <svg
@@ -118,7 +123,8 @@ export default class Cartestatery extends Component {
                 />
               </svg>
 
-              <h1>{this.props.wcc}</h1>
+              <h1 className="lg:hidden">{this.props.wcc}</h1>
+              <h1 className="hiddenDiv lg:flex">{this.props.lgwcc}</h1>
             </div>
             <div className="flex gap-2">
               <svg
@@ -162,7 +168,7 @@ export default class Cartestatery extends Component {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

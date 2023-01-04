@@ -61,7 +61,7 @@ export default class ListLi extends Component {
   };
   render() {
     return (
-      <ul className=" hidden  sm:hidden lg:gap-10 lg:flex">
+      <ul className=" hidden lg:gap-10 lg:flex">
         {this.state.li.map(function (item) {
           return (
             <CartLi href={item.href} title={item.title} icon={item.icon} />

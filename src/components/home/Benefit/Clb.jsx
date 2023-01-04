@@ -500,7 +500,7 @@ export default class Clb extends Component {
   render() {
     return (
       <>
-        <div className="flex flex-col lg:grid gap-10 lg:gap-x-32  lg:grid-cols-2  lg:w-[660px] lg:justify-start">
+        <div className="flex flex-col  lg:grid gap-10 lg:gap-x-32  lg:grid-cols-2  lg:w-[660px] lg:justify-start">
           {this.state.cart.map((item) => {
             return <Cb svg={item.svg} top={item.top} but={item.but} />;
           })}
