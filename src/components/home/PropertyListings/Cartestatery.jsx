@@ -8,7 +8,7 @@ export default class Cartestatery extends Component {
           <div className="w-[300px]  lg:w-[352px] h-[210px]">
             <img
               className=" rounded-t-xl cursor-not-allowed"
-              src={require("../../../assets/img/home-page/imgestatery1.png")}
+              src={require("../../../assets/img/home-page/imgestatery5.png")}
               alt=""
             />
             <button

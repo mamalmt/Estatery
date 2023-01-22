@@ -9,22 +9,22 @@ import Termes from "./Termes";
 
 function Footer() {
   return (
-    <div className="flex flex-col gap-5">
-      <div className="px-5 gap-8 ">
-        <Logo />
-      </div>
-      <div className="flex py-6">
-        <div className="flex flex-col gap-9 px-5">
+    <div className="flex flex-col gap-5 ">
+      <div className="flex flex-col lg:flex-row container lg:justify-around ">
+        <div className=" gap-8 ">
+          <Logo />
+        </div>
+        <div className="  py-6 gap-7 lg:gap-x-40 grid grid-cols-2   lg:grid-cols-3">
           <SelHome />
           <BuyHome />
           <Br />
-        </div>
-        <div className="flex flex-col gap-9">
+
           <Termes />
           <About />
           <Resources />
         </div>
       </div>
+
       <Copyright />
       <br />
     </div>

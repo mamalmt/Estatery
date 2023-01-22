@@ -108,7 +108,7 @@ function Searchlist() {
               stroke-linejoin="round"
             />
           </svg>
-          Rent
+          Buy
         </button>
         <button className="rent-btn" type="button">
           <svg
@@ -134,7 +134,7 @@ function Searchlist() {
               </clipPath>
             </defs>
           </svg>
-          Rent
+          Sell
         </button>
       </div>
     </div>

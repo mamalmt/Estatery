@@ -1,6 +1,6 @@
 function Features() {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col  lg:flex-row  gap-6">
       <div className="flex flex-col gap-5 p-4 bg-white bg-opacity-50 rounded-xl">
         <a href="">
           <svg
