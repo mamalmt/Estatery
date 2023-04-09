@@ -13,6 +13,7 @@ export default class ListCartEstatery extends Component {
         wcc: 2,
         lgwcc: "2 Bathrooms",
         area: "5x7 m²",
+        image:require("../../../assets/img/home-page/imgestatery1.png")
       },
       {
         price: "$2,700",
@@ -24,6 +25,8 @@ export default class ListCartEstatery extends Component {
         wcc: 1,
         lgwcc: "1 Bathrooms",
         area: "5x7 m²",
+        image:require("../../../assets/img/home-page/imgestatery2.png")
+
       },
       {
         price: "$4,550",
@@ -35,6 +38,7 @@ export default class ListCartEstatery extends Component {
         wcc: 4,
         lgwcc: "4 Bathrooms",
         area: "5x7 m²",
+        image:require("../../../assets/img/home-page/imgestatery3.png")
       },
       {
         price: "$2,400",
@@ -46,6 +50,7 @@ export default class ListCartEstatery extends Component {
         wcc: 2,
         lgwcc: "2 Bathrooms",
         area: "5x7 m²",
+        image:require("../../../assets/img/home-page/imgestatery4.png")
       },
       {
         price: "$2,500",
@@ -57,6 +62,7 @@ export default class ListCartEstatery extends Component {
         wcc: 2,
         lgwcc: "2 Bathrooms",
         area: "5x7 m²",
+        image:require("../../../assets/img/home-page/imgestatery5.png")
       },
       {
         price: "$1,600",
@@ -68,6 +74,7 @@ export default class ListCartEstatery extends Component {
         wcc: 1,
         lgwcc: "1 Bathrooms",
         area: "5x7 m²",
+        image:require("../../../assets/img/home-page/imgestatery6.png")
       },
     ],
   };
@@ -87,6 +94,7 @@ export default class ListCartEstatery extends Component {
                 lgwcc={item.lgwcc}
                 wcc={item.wcc}
                 area={item.area}
+                image={item.image}
               />
             );
           })}

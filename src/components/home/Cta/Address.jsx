@@ -1,6 +1,6 @@
 function Address() {
   return (
-    <div className="flex flex-col gap-6 lg:justify-center  lg:items-center   ">
+    <div className="flex flex-col gap-6 lg:justify-center  items-center   ">
       <div className=" flex flex-col lg:flex-row  lg:justify-between  lg:p-3  lg:items-center   lg:w-[543px]  lg:h-[80px] lg:bg-white lg:rounded-xl lg:gap-0 gap-3">
         <input
           className=" bg-white w-[300px] h-14 rounded-xl text-PaleBlue focus:outline-none placeholder:text-lg placeholder:px-5"
